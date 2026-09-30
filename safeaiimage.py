@@ -19,7 +19,7 @@ st.set_page_config(
 # HUGGING FACE
 # ============================================================
 
-HF_API_KEY = "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"
+HF_API_KEY = st.secrets["HF_API_KEY"]
 
 if not HF_API_KEY:
     st.error("❌ HF_API_KEY is missing from Streamlit secrets.")
